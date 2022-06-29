@@ -14,6 +14,8 @@ public class Album {
     private String genero;
     private Double precio;
 
+    private String artista;
+
     public Integer getId() {
         return id;
     }
@@ -54,6 +56,14 @@ public class Album {
         this.precio = precio;
     }
 
+    public String getArtista() {
+        return artista;
+    }
+
+    public void setArtista(String artista) {
+        this.artista = artista;
+    }
+
     @Override
     public String toString() {
         return "Album{" +
@@ -62,6 +72,7 @@ public class Album {
                 ", lanzado=" + lanzado +
                 ", genero='" + genero + '\'' +
                 ", precio=" + precio +
+                ", artista='" + artista + '\'' +
                 '}';
     }
 }
